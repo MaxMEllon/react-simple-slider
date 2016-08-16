@@ -1,6 +1,10 @@
 # react-simple-slider
 
+`react-simple-slider` is *simple slider component for React.js*.
+
 ![](https://raw.githubusercontent.com/MaxMEllon/demos/master/react-simple-slider/demo.gif)
+
+![](https://nodei.co/npm/simplayer.png)
 
 Usage
 ---
@@ -55,6 +59,17 @@ API reference
   - `onChange` - changes value callback function.
     - **optional**
     - type: `function`
+      - arguments of callback
+        - value
+          - type: number
+        - event
+          - type: object
+
+- *refs:*
+  - `setValue` - set value of slider and rerender components if different previous value.
+    - arguments
+      - value
+        - type: number
 
 Start Development
 ---

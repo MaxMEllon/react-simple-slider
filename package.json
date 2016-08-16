@@ -1,6 +1,6 @@
 {
   "name": "react-simple-slider",
-  "version": "v0.1.2",
+  "version": "v0.2.0",
   "main": "lib/index.js",
   "description": "simple slider component for React.js",
   "keywords": [

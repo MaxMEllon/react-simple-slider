@@ -33,6 +33,7 @@ export default class Slider extends Component {
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseDown = this.onMouseDown.bind(this);
     this.onMouseUp = this.onMouseUp.bind(this);
+    this.setValue = this.setValue.bind(this);
   }
 
   componentDidMount() {
@@ -71,6 +72,12 @@ export default class Slider extends Component {
 
   onMouseUp() {
     if (this.state.drag) this.setState({ drag: false });
+  }
+
+  setValue(value) {
+    if (isNaN(value)) throw new TypeError('arguments of setValue should be number type.');
+    const width = parseInt(value / this.props.max * this.props.width);
+    this.setState({ value, width });
   }
 
   render() {
