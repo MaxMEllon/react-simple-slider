@@ -4,7 +4,7 @@
 
 ![](https://raw.githubusercontent.com/MaxMEllon/demos/master/react-simple-slider/demo.gif)
 
-![](https://nodei.co/npm/simplayer.png)
+![](https://nodei.co/npm/react-simple-slider.png)
 
 Usage
 ---
