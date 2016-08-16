@@ -34,6 +34,7 @@ export default class Slider extends Component {
     this.onMouseDown = this.onMouseDown.bind(this);
     this.onMouseUp = this.onMouseUp.bind(this);
     this.setValue = this.setValue.bind(this);
+    this.getValue = this.getValue.bind(this);
   }
 
   componentDidMount() {
@@ -78,6 +79,10 @@ export default class Slider extends Component {
     if (isNaN(value)) throw new TypeError('arguments of setValue should be number type.');
     const width = parseInt(value / this.props.max * this.props.width);
     this.setState({ value, width });
+  }
+
+  getValue() {
+    return this.state.value;
   }
 
   render() {

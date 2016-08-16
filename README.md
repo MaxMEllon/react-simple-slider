@@ -70,6 +70,10 @@ API reference
     - arguments
       - value
         - type: number
+  - `getValue` - get value of slider.
+    - return
+      - value
+        - type: number
 
 Start Development
 ---
