@@ -27,7 +27,7 @@ export default class Slider extends Component {
 
   constructor(props) {
     super(props);
-    const width = parseInt(this.props.defaultValue / this.props.max * this.props.width) || '50%';
+    const width = parseInt(this.props.default / this.props.max * this.props.width) || '50%';
     const value = this.props.default || 50;
     this.state = { width, value, drag: false };
     this.onMouseMove = this.onMouseMove.bind(this);
