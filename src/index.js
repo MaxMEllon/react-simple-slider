@@ -14,12 +14,15 @@ window.onload = function() {
         width={300}
         max={100}
         onChange={onChange}
+        backStyle={{ backgroundColor: 'black', }}
+        frontStyle={{ backgroundColor: 'red' }}
       />
 
       <Slider
         height={10}
         width={400}
         max={100}
+        defaultValue={20}
         onChange={onChange}
       />
     </div>
